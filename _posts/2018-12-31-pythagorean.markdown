@@ -7,7 +7,7 @@ categories: programming
 
 came across this interesting read from HN: 
 
-[Modern-C-Lamentations](http://aras-p.info/blog/2018/12/28/Modern-C-Lamentations/). It really refresh my mind with modern c++.
+[Modern-C-Lamentations](http://aras-p.info/blog/2018/12/28/Modern-C-Lamentations/). It really refreshed my mind with modern c++.
 
 {% highlight haskell %}
 triples :: Int -> [ (Int, Int, Int) ]
