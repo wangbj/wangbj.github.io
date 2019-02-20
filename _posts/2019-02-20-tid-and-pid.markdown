@@ -24,7 +24,7 @@ For reguar processes (not threads):
 For threads:
 
   - each thread has their own `tid` (`tid` is also unique, but same as `pid`, they do wraps, see `cat /proc/sys/kernel/pid_max`).
-  - threads created in the same process, share the same `pid` (not `pgid`)
+  - threads created in the same process, share the same `pid`.
 
 To demostrate the problem, we can first do a `fork`, and then create threads (`pthread_create`) in both parent and child process.
 The result shows:
