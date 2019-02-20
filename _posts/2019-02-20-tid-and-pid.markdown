@@ -35,6 +35,4 @@ The result shows:
 So even though the `pgid` are indeed the same for all threads created above, it is the `pid` from above should be used to identify their
 relationship with the parent. This can be revealed by check `/proc/pid/task/tid`, i.e.: The `tid` can be discovered under `/proc/pid`.
 
-Example source code can be found in [1]:
-
-[1]: [source code](https://gist.github.com/wangbj/b54af0a574f3b043194dce249c874ef6)
+Example source code can be found in (gist) [Link](https://gist.github.com/wangbj/b54af0a574f3b043194dce249c874ef6)
