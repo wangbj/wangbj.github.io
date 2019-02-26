@@ -24,6 +24,8 @@ github_username:  wangbj
 # Build settings
 markdown: kramdown
 theme: minima
+remote_theme: broccolini/swiss
+theme_color: black
 plugins:
   - jekyll-feed
 
