@@ -17,14 +17,14 @@
 title: programming stuff
 email: wangbj_AT_gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 url: https://wangbj.github.io
 twitter_username: BaojunW
 github_username:  wangbj
 
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "air"
+minimal_mistakes_skin: "default"
 
 plugins:
   - jekyll-paginate
@@ -36,7 +36,7 @@ plugins:
   - jekyll-include-cache
 
 defaults:
-  _posts
+  # _posts
   - scope:
       path: ""
       type: posts
