@@ -36,7 +36,7 @@ plugins:
   - jekyll-include-cache
 
 defaults:
-  # _posts
+  _posts
   - scope:
       path: ""
       type: posts
