@@ -16,17 +16,17 @@
 
 title: programming stuff
 email: wangbj_AT_gmail.com
-author: Baojun Wang
-description: >-
-baseurl: ""
-url: "https://wangbj.github.io"
+description: >- # this means to ignore newlines until "baseurl:"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BaojunW
 github_username:  wangbj
 
-# Build settings
 markdown: kramdown
-permalink: pretty
-paginate: 3
+theme: mmistakes/minimal-mistakes@4.15.2
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
