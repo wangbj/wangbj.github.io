@@ -23,7 +23,9 @@ twitter_username: BaojunW
 github_username:  wangbj
 
 markdown: kramdown
-theme: mmistakes/minimal-mistakes
+remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: "air"
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
