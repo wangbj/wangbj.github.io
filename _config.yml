@@ -18,15 +18,19 @@ title: programming stuff
 email: wangbj_AT_gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://wangbj.github.io
 twitter_username: BaojunW
 github_username:  wangbj
 
 markdown: kramdown
-theme: mmistakes/minimal-mistakes@4.15.2
+theme: mmistakes/minimal-mistakes
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  - jemoji
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
