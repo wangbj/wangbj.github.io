@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About me
+permalink: /aboutme/
 ---
 
   My name is Baojun Wang, I'm a system software engineer with 
