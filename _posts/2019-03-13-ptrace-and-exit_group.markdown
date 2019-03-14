@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Linux ptrace and exit_group"
 date:   2019-03-13
 categories: Linux
