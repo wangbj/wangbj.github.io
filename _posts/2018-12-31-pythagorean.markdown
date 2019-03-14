@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "Pythagorean?"
 date:   2018-12-31
 categories: programming

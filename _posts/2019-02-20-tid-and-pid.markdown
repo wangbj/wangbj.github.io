@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: post
 title:  "tid, pid, ppid and pgid in a threaded context"
 date:   2018-02-20
 categories: Linux
