@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "seccomp multiple rules are useless"
+title:  "seccomp multiple rules"
 date:   2019-06-05
 categories: Linux
 ---
@@ -35,6 +35,6 @@ to keep track of all the ranges to be blacklisted, if the application loads tons
 
 It would be nice if Linux allows replacing seccomp rules on the fly, i.e.: We can get the current seccomp rule (this is supported by `ptrace` -> `PTRACE_SECCOMP_GET_FILTER` since 4.4), edit (run-time) then
 replace it, or allow user to uninstall previous seccomp rules. But this is not something supported as of today. library like `libseccomp` has function `seccomp_release`, but as its manage shows, Any
-seccomp filters loaded into the kernel are not affected. Granted there're security risks to replace existing ones, but it can be mitigated (by checking the caller's priviledge); and security should not
-sacrifice usability, but that's just my opinion.
+seccomp filters loaded into the kernel are not affected.
 
+We could however, mix blacklist and whitelist together, i.e.: Have a permissive blacklisted rules before *execve*, and inject whitelist rules later, the catch is we may only need one set of whitelist rules, installed lastly.
