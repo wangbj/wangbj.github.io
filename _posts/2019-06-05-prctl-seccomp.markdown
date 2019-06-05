@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "seccomp multiple rules are useless"
-date:   2019-06-15
+date:   2019-06-05
 categories: Linux
 ---
 
