@@ -34,5 +34,7 @@ rules, it simply has no effects, because the new range is `traced` by the first 
 to keep track of all the ranges to be blacklisted, if the application loads tons of shared libraries, it becomes quite a headache, not to mention blacklisting is much less secure.
 
 It would be nice if Linux allows replacing seccomp rules on the fly, i.e.: We can get the current seccomp rule (this is supported by `ptrace` -> `PTRACE_SECCOMP_GET_FILTER` since 4.4), edit (run-time) then
-replace it, or allow the user to uninstall previous seccomp rules. But this is not something supported as of today. library like `libseccomp` has function like `seccomp_release`, but as its manage shows, 
-Any seccomp filters loaded into the kernel are not affected.
+replace it, or allow user to uninstall previous seccomp rules. But this is not something supported as of today. library like `libseccomp` has function `seccomp_release`, but as its manage shows, Any
+seccomp filters loaded into the kernel are not affected. Granted there're security risk to replace existing ones, but the risk can be mitigated by checking the caller's priviledge; and security should not
+sacrifice usability, but that's just my opinion.
+
