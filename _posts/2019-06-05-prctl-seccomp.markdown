@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "seccomp multiple rules"
+title:  "seccomp's multiple rules is useless"
 date:   2019-06-05
 categories: Linux
 ---
@@ -37,4 +37,4 @@ It would be nice if Linux allows replacing seccomp rules on the fly, i.e.: We ca
 replace it, or allow user to uninstall previous seccomp rules. But this is not something supported as of today. library like `libseccomp` has function `seccomp_release`, but as its manage shows, Any
 seccomp filters loaded into the kernel are not affected.
 
-We could however, mix blacklist and whitelist together, i.e.: Have a permissive blacklisted rules before *execve*, and inject whitelist rules later, the catch is we may only need one set of whitelist rules, installed lastly.
+Clickbait aside, we could however, mix blacklist and whitelist together, i.e.: Have a permissive blacklisted rules before *execve*, and inject whitelist rules later, the catch is we may only need one set of whitelist rules, installed lastly, but it's not easy to use in practice: it could be even easier to have a single whitelist rules only.
