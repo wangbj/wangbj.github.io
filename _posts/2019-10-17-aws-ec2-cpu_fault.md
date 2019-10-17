@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AWS EC2 HVM instances may lying about cpuid_fault"
+title:  "AWS EC2 HVM instances may lie about cpuid_fault"
 date:   2019-10-17
 categories: Linux
 ---
